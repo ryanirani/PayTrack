@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AssignJob</class>
+ <widget class="QDialog" name="AssignJob">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-90</x>
+     <y>-20</y>
+     <width>1211</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGraphicsView
+{
+	background-color: lightblue;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font-family:  &quot;Lucida Grande&quot;, Lucida, Verdana, sans-serif;
+border: 1px solid #D3D3D3;
+border-radius: 8px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #EEEEEE, stop: 1 #FFFFFF);
+color: #333;
+font-size: 6pt;
+padding: 8px;
+}
+QComboBox:on {
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #D5D5D5, stop: 1 #EEEEEE);
+ }
+ 
+QComboBox::drop-down {
+border: 1px solid #D3D3D3;
+border-radius: 8px;
+ }
+ 
+QComboBox::down-arrow {
+padding: 0px 5px 0px 5px;
+image: url(&quot;/src/Resources/downicon.png&quot;);
+ }</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>220</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+font-family:  &quot;Lucida Grande&quot;, Lucida, Verdana, sans-serif;
+border: 1px solid #D3D3D3;
+border-radius: 8px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #EEEEEE, stop: 1 #FFFFFF);
+color: #333;
+font-size: 6pt;
+padding: 8px;
+}
+QComboBox:on {
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #D5D5D5, stop: 1 #EEEEEE);
+ }
+ 
+QComboBox::drop-down {
+border: 1px solid #D3D3D3;
+border-radius: 8px;
+ }
+ 
+QComboBox::down-arrow {
+padding: 0px 5px 0px 5px;
+image: url(&quot;/src/Resources/downicon.png&quot;);
+ }</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border:2px solid black;
+	border-radius:20px;
+	color:black;
+	background:transparent;
+	font: 14pt, BOLD &quot;Arial&quot;;
+}
+QPushButton:hover
+{
+	background-color:rgb(0, 255, 187);
+}	</string>
+   </property>
+   <property name="text">
+    <string>ASSIGN</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>200</y>
+     <width>171</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	font: 22pt, &quot;Arial&quot;;
+	color:white;
+	border: 1px solid black;
+}</string>
+   </property>
+   <property name="text">
+    <string>EMPLOYEES</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	font: 22pt, &quot;Arial&quot;;
+	color:white;
+	border: 1px solid black;
+}</string>
+   </property>
+   <property name="text">
+    <string>JOBS</string>
+   </property>
+  </widget>
+  <zorder>graphicsView_2</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>comboBox_2</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

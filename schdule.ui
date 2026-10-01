@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Schdule</class>
+ <widget class="QDialog" name="Schdule">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1046</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    font-family: &quot;Helvetica&quot;, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #333; /* Subtle border */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}</string>
+   </property>
+   <property name="text">
+    <string>Employee</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>170</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    font-family: &quot;Helvetica&quot;, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #333; /* Subtle border */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}</string>
+   </property>
+   <property name="text">
+    <string>   Start</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>170</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    font-family: &quot;Helvetica&quot;, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #333; /* Subtle border */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}</string>
+   </property>
+   <property name="text">
+    <string>    End</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>620</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border:white;
+	color:white;
+	background-color:rgb(129, 176, 129);
+	font: 700 16pt &quot;Arial&quot;;
+	Border-radius: 30px;
+}
+QPushButton:hover
+{
+	background-color:rgb(1, 90, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>View Employees List</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>620</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	border:black;
+	color:white;
+	background-color:rgb(129, 176, 129);
+	font: 700 16pt &quot;Arial&quot;;
+	Border-radius: 30px;
+}
+QPushButton:hover
+{
+	background-color:rgb(1, 90, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>View Current Schdule</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>10</y>
+     <width>521</width>
+     <height>601</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>410</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border:2px solid black;
+	border-radius:40px;
+	color:white;
+	background:rgb(0, 157, 157);
+	font: 32pt,BOLD &quot;Arial&quot;;
+}
+QPushButton:hover
+{
+	background-color:rgb(0, 255, 187);
+}	</string>
+   </property>
+   <property name="text">
+    <string>ADD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    font-family: &quot;Helvetica&quot;, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #333; /* Subtle border */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}</string>
+   </property>
+   <property name="text">
+    <string>Date</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-110</x>
+     <y>-110</y>
+     <width>1441</width>
+     <height>831</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGraphicsView
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(69, 99, 138, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>410</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border:2px solid black;
+	border-radius:40px;
+	color:white;
+	background:rgb(255, 41, 70);
+	font: 32pt,BOLD &quot;Arial&quot;;
+}
+QPushButton:hover
+{
+	background-color:rgb(214, 14, 14);
+}	</string>
+   </property>
+   <property name="text">
+    <string>EXIT</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>270</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+
+
+QComboBox:hover, QPushButton:hover
+{
+    border: 1px solid yellow;
+    color: white;
+}
+
+QComboBox:editable {
+    background: red;
+    color: pink;
+}
+
+QComboBox:on
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+    selection-background-color: #ffaa00;
+}
+
+QComboBox:!on
+{
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666, stop: 0.1 #555, stop: 0.5 #555, stop: 0.9 #444, stop: 1 #333);
+}
+
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    color: black;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #111, stop: 1 #333);
+}
+
+QComboBox::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-width: 0px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+     padding-left: 10px;
+ }
+
+QComboBox::down-arrow, QSpinBox::down-arrow, QTimeEdit::down-arrow, QDateEdit::down-arrow
+{
+     image: url(:/icons/down_arrow.png);
+     width: 7px;
+     height: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>270</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+
+
+QComboBox:hover, QPushButton:hover
+{
+    border: 1px solid yellow;
+    color: white;
+}
+
+QComboBox:editable {
+    background: red;
+    color: pink;
+}
+
+QComboBox:on
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+    selection-background-color: #ffaa00;
+}
+
+QComboBox:!on
+{
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666, stop: 0.1 #555, stop: 0.5 #555, stop: 0.9 #444, stop: 1 #333);
+}
+
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    color: black;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #111, stop: 1 #333);
+}
+
+QComboBox::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-width: 0px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+     padding-left: 10px;
+ }
+
+QComboBox::down-arrow, QSpinBox::down-arrow, QTimeEdit::down-arrow, QDateEdit::down-arrow
+{
+     image: url(:/icons/down_arrow.png);
+     width: 7px;
+     height: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>310</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+
+
+QComboBox:hover, QPushButton:hover
+{
+    border: 1px solid yellow;
+    color: white;
+}
+
+QComboBox:editable {
+    background: red;
+    color: pink;
+}
+
+QComboBox:on
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+    selection-background-color: #ffaa00;
+}
+
+QComboBox:!on
+{
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666, stop: 0.1 #555, stop: 0.5 #555, stop: 0.9 #444, stop: 1 #333);
+}
+
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    color: black;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #111, stop: 1 #333);
+}
+
+QComboBox::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-width: 0px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+     padding-left: 10px;
+ }
+
+QComboBox::down-arrow, QSpinBox::down-arrow, QTimeEdit::down-arrow, QDateEdit::down-arrow
+{
+     image: url(:/icons/down_arrow.png);
+     width: 7px;
+     height: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_5">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>310</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+
+
+QComboBox:hover, QPushButton:hover
+{
+    border: 1px solid yellow;
+    color: white;
+}
+
+QComboBox:editable {
+    background: red;
+    color: pink;
+}
+
+QComboBox:on
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+    selection-background-color: #ffaa00;
+}
+
+QComboBox:!on
+{
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666, stop: 0.1 #555, stop: 0.5 #555, stop: 0.9 #444, stop: 1 #333);
+}
+
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    color: black;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #111, stop: 1 #333);
+}
+
+QComboBox::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-width: 0px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+     padding-left: 10px;
+ }
+
+QComboBox::down-arrow, QSpinBox::down-arrow, QTimeEdit::down-arrow, QDateEdit::down-arrow
+{
+     image: url(:/icons/down_arrow.png);
+     width: 7px;
+     height: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+
+
+QComboBox:hover, QPushButton:hover
+{
+    border: 1px solid yellow;
+    color: white;
+}
+
+QComboBox:editable {
+    background: red;
+    color: pink;
+}
+
+QComboBox:on
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+    selection-background-color: #ffaa00;
+}
+
+QComboBox:!on
+{
+    color: white;
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #666, stop: 0.1 #555, stop: 0.5 #555, stop: 0.9 #444, stop: 1 #333);
+}
+
+QComboBox QAbstractItemView
+{
+    border: 2px solid darkgray;
+    color: black;
+    selection-background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #111, stop: 1 #333);
+}
+
+QComboBox::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-width: 0px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+     padding-left: 10px;
+ }
+
+QComboBox::down-arrow, QSpinBox::down-arrow, QTimeEdit::down-arrow, QDateEdit::down-arrow
+{
+     image: url(:/icons/down_arrow.png);
+     width: 7px;
+     height: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    selection-background-color: #111;
+    selection-color: yellow;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border: 1px solid #1e1e1e;
+    border-radius: 5;
+    padding: 1px 0px 1px 20px;
+}
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 5px; 
+}
+
+
+
+</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>label</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>label_5</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>comboBox_2</zorder>
+  <zorder>comboBox_3</zorder>
+  <zorder>comboBox_5</zorder>
+  <zorder>comboBox_4</zorder>
+  <zorder>dateEdit</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
